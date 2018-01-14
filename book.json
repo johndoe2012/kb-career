@@ -1,4 +1,4 @@
 {
     "gitbook": "3.x.x",
-    "plugins": ["katex", "codeblock-filename", "sectionx"]
+    "plugins": ["katex", "codeblock-filename", "sectionx", "expandable-chapters", "splitter"]
 }
