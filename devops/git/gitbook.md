@@ -6,7 +6,7 @@ One thing to watch out for: During the installation you will notice a window mar
 
 <!--endsec-->
 
-!FILENAME myfile
+{% label %}myfile{% endlabel %}
 ```
 $ python3 --version
 Python 3.6.1

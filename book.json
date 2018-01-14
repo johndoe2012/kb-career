@@ -1,4 +1,20 @@
 {
     "gitbook": "3.x.x",
-    "plugins": ["katex", "codeblock-filename", "sectionx", "expandable-chapters", "splitter"]
+    "plugins": [
+	"katex", 
+	"codeblock-label", 
+	"sectionx", 
+	"expandable-chapters", 
+	"splitter",
+	"anchor-navigation-ex",
+	"richquotes"
+    ],
+    "pluginsConfig": {
+	"richquotes": {
+	    "default": false
+	},
+    	"sectionx": {
+	    "tag": "b"
+	}
+    }
 }
