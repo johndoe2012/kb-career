@@ -6,7 +6,7 @@ One thing to watch out for: During the installation you will notice a window mar
 
 <!--endsec-->
 
-{% filename %}command-line{% endfilename %}
+!FILENAME myfile
 ```
 $ python3 --version
 Python 3.6.1
