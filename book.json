@@ -11,7 +11,7 @@
     ],
     "pluginsConfig": {
 	"richquotes": {
-	    "default": false
+	    "default": true
 	},
     	"sectionx": {
 	    "tag": "b"

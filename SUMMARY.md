@@ -1,6 +1,9 @@
 # Technical Career Related Topics
 
-[About this Documentation](README.md)
+
+### About
+
+* [About this Documentation](README.md)
 
 ### Algorithm
 
