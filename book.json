@@ -7,12 +7,9 @@
 	"expandable-chapters", 
 	"splitter",
 	"anchor-navigation-ex",
-	"richquotes"
+	"alerts"
     ],
     "pluginsConfig": {
-	"richquotes": {
-	    "default": true
-	},
     	"sectionx": {
 	    "tag": "b"
 	},
