@@ -1,9 +1,4 @@
 {
     "gitbook": "3.x.x",
-    "plugins": ["katex", "codeblock-filename"],
-    "links": {
-        "sidebar": {
-            "Contact us": "mailto:contact@example.org"
-        }
-    }
+    "plugins": ["katex", "codeblock-filename", "sectionx-collapse"]
 }
