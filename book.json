@@ -1,0 +1,9 @@
+{
+    "gitbook": "2.x.x",
+    "plugins": ["katex"],
+    "links": {
+        "sidebar": {
+            "Contact us": "mailto:contact@example.org"
+        }
+    }
+}
