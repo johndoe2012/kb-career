@@ -1,10 +1,6 @@
 # Technical Career Related Topics
 
 
-### About
-
-* [About this Documentation](README.md)
-
 ### Algorithm
 
 * [Statistics](algorithm/statistics/README.md)
@@ -31,3 +27,6 @@
 * [Professional Profile](soft-skills/profile/README.md)
 * [Business Etiquette](soft-skills/etiquette/README.md)
 
+### About
+
+* [About this Documentation](README.md)

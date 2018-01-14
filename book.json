@@ -15,6 +15,9 @@
 	},
     	"sectionx": {
 	    "tag": "b"
+	},
+	"anchor-navigation-ex": {
+	    "showLevel": false
 	}
     }
 }
