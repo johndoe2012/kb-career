@@ -1,3 +1,9 @@
 # Git Fundamental and Practices
 
-{% include "./gitbook.md" %}
+**Table of Content**
+
+- [Introduction](ch1-intro.md)
+  - [Version Control Systems]()
+  - [Git Concepts]()
+  - [Git Configurations]()
+- ​
