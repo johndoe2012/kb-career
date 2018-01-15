@@ -8,6 +8,7 @@
 ### DevOps
 
 * [Git Fundamental and Practice](devops/git/README.md)
+  * [Introduction](devops/git/ch1-intro.md)
 * [Linux Administration](devops/linux-admin/README.md)
 
 ### Programming Languages
