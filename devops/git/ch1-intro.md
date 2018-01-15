@@ -81,9 +81,8 @@ $ ls -a
 ./  ../  .git/
 ```
 
-> **[info] Note: **
+> **[info] Note: ** **Nothing has been tracked by Git yet**, for which we need to make an initial commit. Also Git ignores empty directory. **Create at least one single file for tracking**.
 >
-> **Nothing has been tracked by Git yet**, for which we need to make an initial commit. Also Git ignores empty directory. **Create at least one single file for tracking**.
 
 #### Clone Existing Repository
 
@@ -101,9 +100,8 @@ $ ls
 mynewproject/  myproject/  myproject.git/
 ```
 
->  **[info] Note:**
+>  **[info] Note:** all files are **already been tracked, and unmodified**. 
 >
->  all files are **already been tracked, and unmodified**. 
 
 #### Create Bare Repository
 

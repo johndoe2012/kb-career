@@ -7,7 +7,8 @@
 	"expandable-chapters", 
 	"splitter",
 	"anchor-navigation-ex",
-	"alerts"
+	"alerts",
+	"-lunr", "-search", "search-plus"
     ],
     "pluginsConfig": {
     	"sectionx": {
