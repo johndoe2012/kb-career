@@ -158,6 +158,7 @@ Use `git diff HEAD -- <file>` to see difference for a specific file between **la
 
 > **[info] NOTE:** `git diff` does not show untracked file. 
 
+
 > **[info] NOTE: ** `@@-43,7 +2,8@@` means that following is a display of 7 lines starting line 43 in first file, and 8 lines starting line 2 in second file. 
 
 ### View History
