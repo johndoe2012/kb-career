@@ -9,6 +9,7 @@
 
 * [Git Fundamental and Practice](devops/git/README.md)
   * [Introduction](devops/git/ch1-intro.md)
+  * [Git Commits](devops/git/ch2-commit.md)
 * [Linux Administration](devops/linux-admin/README.md)
 
 ### Programming Languages
