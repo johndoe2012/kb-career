@@ -193,6 +193,16 @@ $ git log --pretty="%h - %s" --author=gitster \
 $ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
 ```
 
+### Use Patches
+
+Use `git format-patch` to generate patches for commits. 
+
+- `git format-patch <commit>` generate serials of patches since the specified commit (exclusive) until `HEAD`. 
+- `git format-patch HEAD~3..HEAD` generate serials of patches for the commit range. 
+- `git format-patch -1 HEAD~2` generate patches since the 1 commit (exclusive) before `HEAD~2` until `HEAD~2`. In this case it is `HEAD~2` only. 
+
+Use `git am *.patch` to apply a patch. 
+
 ### Tag Commits
 
 Use `git tag` to manipulate tags for commits.
@@ -203,3 +213,13 @@ Use `git tag` to manipulate tags for commits.
 - `git tag -a v1.0 -m "version 1.0" <commit>`: add a tag for specific commit given its hash. 
 - `git show v0.1`: display information for tag `v0.1`. 
 - `git push origin --tags`: note `git push` will not automatically push tags to remote server. add `--tags` options to do so. 
+
+## Guideline for Commits
+
+1. Use `git diff --check` to avoid **whitespace error**.
+2. Make each commit a logically separate and digestible changeset. 
+3. Commit message: 
+   - single line of 50 character summary. 
+   - a blank line. 
+   - detail explanation with 72 character per line. 
+   - use imperative present tense such as ''add tests". 
