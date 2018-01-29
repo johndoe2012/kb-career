@@ -197,7 +197,7 @@ $ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgree
 
 Use `git format-patch` to generate patches for commits. 
 
-- `git format-patch <commit>` generate serials of patches since the specified commit (exclusive) until `HEAD`. 
+- `git format-patch <commit>` generate **serials of patches** since the specified commit (exclusive) until `HEAD`. 
 - `git format-patch HEAD~3..HEAD` generate serials of patches for the commit range. 
 - `git format-patch -1 HEAD~2` generate patches since the 1 commit (exclusive) before `HEAD~2` until `HEAD~2`. In this case it is `HEAD~2` only. 
 
@@ -213,6 +213,43 @@ Use `git tag` to manipulate tags for commits.
 - `git tag -a v1.0 -m "version 1.0" <commit>`: add a tag for specific commit given its hash. 
 - `git show v0.1`: display information for tag `v0.1`. 
 - `git push origin --tags`: note `git push` will not automatically push tags to remote server. add `--tags` options to do so. 
+
+### Find Regression Commit
+
+Use `git bisect` to find the first regression commit with binary search. 
+
+```shell
+# start the bisect process
+$ git bisect start
+# mark current/latest commit as bad
+$ git bisect bad
+# mark the first known good commit
+$ git bisect good HEAD~7
+# git checkout a commit between good and bad for testing
+Bisecting: 3 revisions left to test after this (roughly 2 steps)
+[44b9c28e8fd375718534231c61d11c469b0e4c91] add test2
+# run some tests with current commit
+$ <testpath>/test
+# inform git the test result for this commit
+$ git bisect bad				
+# git checkout a commit between good and new bad using binary search
+Bisecting: 0 revisions left to test after this (roughly 1 step)
+[0e4d7bb55f0a5bf045292719ad350bc3449634ec] Revert "2nd"
+# run some tests with current commit
+$ <testpath>/test
+# inform git the test result for this commit
+$ git bisect good
+# repeat the binary search and test, until the first bad commit is found
+44b9c28e8fd375718534231c61d11c469b0e4c91 is the first bad commit
+# optionally we can ask git to run the diagnostic test automatically and do the binary search based on its result
+$ git bisect run <testpath>/test
+# check out search log
+$ git bisect log
+# stop the bisect process
+$ git bisect reset
+```
+
+> **[info] NOTE:** make sure the test script is placed at an external path or untracked by the git repo. Otherwise the script itself may be overwritten as git checkout commits. 
 
 ## Guideline for Commits
 

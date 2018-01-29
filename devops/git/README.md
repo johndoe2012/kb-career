@@ -1,9 +1,3 @@
 # Git Fundamental and Practices
 
-**Table of Content**
-
-- [Introduction](ch1-intro.md)
-  - [Version Control Systems]()
-  - [Git Concepts]()
-  - [Git Configurations]()
-- ​
+Reading Notes of [Pro Git Book](https://git-scm.com/book/en/v2). 
